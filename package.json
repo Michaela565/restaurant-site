@@ -1,0 +1,25 @@
+{
+  "name": "restaurant-site",
+  "version": "1.0.0",
+  "description": "a restaurant webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michaela565/restaurant-site.git"
+  },
+  "author": "Michaela Kurcikova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michaela565/restaurant-site/issues"
+  },
+  "homepage": "https://github.com/Michaela565/restaurant-site#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
