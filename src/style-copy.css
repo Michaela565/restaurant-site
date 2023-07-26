@@ -11,12 +11,12 @@ body{
 
 #content{
     display: grid;
-    grid-template-rows: 4em auto 3em;
-    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 4em 40em auto 3em;
+    grid-template-columns: 100%;
     height: 100%;
 }
 
-/* navigation */
+/* ---navigation--- */
 
 #main-nav{
     grid-column: 1 / 4;
@@ -26,7 +26,7 @@ body{
     align-items: center;
     text-align: center;
     font-size: 22px;
-    background-color: #000000;
+    background-color: #121212;
     padding-bottom: 1em;
 }
 
@@ -77,14 +77,18 @@ body{
     color: #ffffff;
 }
 
-.pizzeria-logo{
+.logo > img{
     width: 100px;
     height: 60px;
     object-fit: cover;
-    /*padding: 0 2em;*/
 }
 
+/* ---navigation end--- */
+
+/* ---header part---*/
+
 .first-half{
+    grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -117,16 +121,15 @@ body{
     padding-top: 1em;
 }
 
+/* ---header part end---*/
+
+/* ---top picks part --- */
+
 .second-half{
-    grid-column: 2 / 4;
+    grid-row: 3 / 4;
     padding: 2em;
     z-index: 10;
     background-color: #F2E7CE;
-}
-
-.second-half > div:first-of-type{
-    font-size: 32px;
-    font-weight: 600;
 }
 
 .picks{
@@ -134,6 +137,8 @@ body{
     grid-template-columns: repeat(2, 50%);
     grid-auto-rows: 16em;
 }
+
+/* --- pick card --- */
 
 .pick{
     background-color: #A53F2B;
@@ -160,19 +165,24 @@ body{
     justify-content: space-between;
 }
 
+ul{
+    margin: 0.5em 1.5em;
+}
+
 .information-pizza> div.price{
     display: flex;
     justify-content: right;
 }
 
-ul{
-    margin: 0.5em 1.5em;
-}
+/* --- pick card end --- */
 
+/* --- top picks part end --- */
+
+/* --- footer --- */
 footer{
-    grid-column: 1 / 4;
+    grid-row: 4 / 5;
     color: #ffffff;
-    background-color: #000000;
+    background-color: #121212;
     display: flex;
     justify-content: space-between;
     padding: 1em;
@@ -182,6 +192,31 @@ footer>div>a:any-link{
     color: #ffffff;
 }
 
+/* --- footer end --- */
+
+
+/* --- scrollbar --- */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A53F2B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #712c20;
+}
+
+/* --- scrollbar end --- */
+
+/* --- general font settings --- */
+
 .bold{
     font-weight: 600;
 }
@@ -190,27 +225,12 @@ footer>div>a:any-link{
     font-size: 25px;
 }
 
+.larger{
+    font-size: 32px;
+}
+
 .fancy{
     font-family: 'Abril Fatface', 'Roboto', Courier, monospace;
     font-size: 64px;
     padding-bottom: 0.5em;
-}
-
-::-webkit-scrollbar {
-    width: 15px;
-}
-  
-/* Track */
-::-webkit-scrollbar-track {
-    background: #000000;
-}
-  
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #A53F2B;
-}
-  
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #712c20;
 }
