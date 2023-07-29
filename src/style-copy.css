@@ -271,3 +271,13 @@ footer>div>a:any-link{
     font-size: 64px;
     padding-bottom: 0.5em;
 }
+
+/* --- menu page addons --- */
+
+.menu{
+    grid-row: 2 / 4;
+    padding: 2em;
+    z-index: 10;
+    background-color: #121212;
+    color: #ffffff;
+}

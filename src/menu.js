@@ -1,6 +1,6 @@
-const createHomePage = (() =>{
-
-    const createHomeStatic = () => {
+const createMenuPage = (() => {
+    
+    const createMenuStatic = () => {
         const content = document.querySelector('#content');
         let html = `<nav id="main-nav">
         <a class="logo" href="/">
@@ -13,19 +13,7 @@ const createHomePage = (() =>{
             <a href="/" class="nav-element bold"><div>Contact</div></a>
         </div>
     </nav>
-    <div class="first-half">
-        <img src="pizzeria-logo.svg" alt="logo">
-        <div class="white-cover">
-            <div class="fancy">
-                Fancy pizzeria
-            </div>
-            <div>
-                <div>Telephone: <div class="large bold">123 456 789</div></div>
-                <div>Adress: Street 123, Town</div>
-            </div>
-        </div>
-    </div>
-    <div class="second-half">
+    <div class="menu">
         <div class="larger bold">Top picks:</div>
         <div class="picks">
             <div class="pick">
@@ -111,16 +99,13 @@ const createHomePage = (() =>{
     <footer>
         <div>Tel: 123 456 789</div>
         <div>Created by <a href="https://github.com/Michaela565">Michaela Kurcikova</a> 2023</div>
-    </footer>`;
+    </footer> `;
 
         content.innerHTML = html.trim();
     }
-    
     return{
-        createHomeStatic
+        createMenuStatic
     }
-
 })();
 
-export {createHomePage}
-
+export {createMenuPage}
