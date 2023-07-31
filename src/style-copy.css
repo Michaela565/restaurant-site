@@ -236,7 +236,7 @@ footer>div>a:any-link{
 }
 
 ::-webkit-scrollbar-track {
-    background: #121212;
+    background: var(--black)
 }
 
 ::-webkit-scrollbar-thumb {
