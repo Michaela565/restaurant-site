@@ -3,14 +3,14 @@ const createHomePage = (() =>{
     const createHomeStatic = () => {
         const content = document.querySelector('#content');
         let html = `<nav id="main-nav">
-        <a class="logo" href="/">
+        <a class="logo" href="javascript:;">
             <img src="pizzeria-logo.svg" alt="pizzeria-logo">
             <div>Fancy</div>
         </a>
         <div class="navigation-links">
-            <a href="/" class="nav-element bold"><div>Home</div></a>
-            <a href="/" class="nav-element bold"><div>Menu</div></a>
-            <a href="/" class="nav-element bold"><div>Contact</div></a>
+            <a href="javascript:;" class="nav-element bold" data-page="home">Home</a>
+            <a href="javascript:;" class="nav-element bold" data-page="menu">Menu</a>
+            <a href="javascript:;" class="nav-element bold" data-page="contact">Contact</a>
         </div>
     </nav>
     <div class="first-half">

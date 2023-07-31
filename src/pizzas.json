@@ -1,0 +1,23 @@
+{
+    "pizzas": [
+        {
+            "id" : 1,
+            "name" : "Neapolitan",
+            "ingredients" : ["tomato", "cheese", "spinach"],
+            "imagePath" :" img/991307.jpg ",
+            "price" : "7, 20 €"
+        },
+        {
+            "id" : 2,
+            "name" : "Margherita",
+            "ingredients" : ["tomato", "cheese", "spinach"],
+            "price" : "7, 20 €"
+        },
+        {
+            "id" : 3,
+            "name" : "Hawai",
+            "ingredients" : ["tomato", "cheese", "spinach"],
+            "price" : "7, 20 €"
+        }
+    ]
+}
