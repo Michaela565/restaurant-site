@@ -3,7 +3,7 @@ import { createHomePage } from "./home";
 import {createMenuPage} from "./menu";
 import {createContactsPage} from "./contacts";
 import { createAPizza } from './pizza';
-import data from "./pizzas.json";
+import data from './pizzas.json';
 
 console.log("hey, im alive btw");
 

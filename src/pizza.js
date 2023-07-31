@@ -21,10 +21,23 @@ const createAPizza = (() => {
         return staticHtmlTemplate.trim();
     }
     
-    //const createNewPizzaJSON = (jsonData)
+    const createNewPizzaJSON = (jsonData, name, ingredients, imagePath, price) => {
+        const id = jsonData.pizzas.length - 1;
+
+        const template = {
+            "id" : id,
+            "name" : name,
+            "ingredients" : ingredients,
+            "imagePath" : imagePath,
+            "price" : price
+        };
+        
+        jsonData.pizzas.push(template);
+    }
 
     return{
         createStaticPizzaPick,
+        createNewPizzaJSON,
     }
 })();
 
