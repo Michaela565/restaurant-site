@@ -2,7 +2,7 @@ import './style-copy.css';
 import { createHomePage } from "./home";
 import {createMenuPage} from "./menu";
 import {createContactsPage} from "./contacts";
-import { createAPick } from './pick';
+import { createAPizza } from './pizza';
 import data from "./pizzas.json";
 
 console.log("hey, im alive btw");
@@ -19,7 +19,7 @@ const init = (() => {
         const picksHolder = document.querySelector(".picks");
         for (let i = 0; i < data.pizzas.length; i++) {
             const pizza = data.pizzas[i];
-            const newPick = createAPick.createStaticPick(pizza.imagePath, pizza.name, pizza.ingredients, pizza.price, pizza.id);
+            const newPick = createAPizza.createStaticPizzaPick(pizza);
             picksHolder.innerHTML = picksHolder.innerHTML + newPick;
             
         }
