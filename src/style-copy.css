@@ -3,12 +3,16 @@
 
 :root{
     --black: #1f1f1f;
+    --light-yellow: #F2E7CE;
+    --redish-orange: #A53F2B;
+    --redish-orange-darkened: #712c20;
+    --main-font: 'Noto Sans';
 }
 
 *{
     margin: 0;
     padding: 0;
-    font-family:'Noto Sans', Courier, monospace;
+    font-family: var(--main-font), Courier, monospace;
 }
 
 body{
@@ -59,7 +63,7 @@ body{
 }
 
 .nav-element:hover{
-    color: #F2E7CE;
+    color: var(--light-yellow);
 }
 
 .logo{
@@ -173,7 +177,7 @@ body{
 /* --- pick card --- */
 
 .pick{
-    background-color: #F2E7CE;
+    background-color: var(--light-yellow);
     box-shadow: 7px 8px 8px #000000;
     display: flex;
     justify-content: space-between;
@@ -240,11 +244,11 @@ footer>div>a:any-link{
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #A53F2B;
+    background: var(--redish-orange);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #712c20;
+    background: var(--redish-orange-darkened);
 }
 
 @media screen and (max-width: 770px){
