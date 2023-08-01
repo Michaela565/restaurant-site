@@ -60,5 +60,6 @@ const init = (() => {
 
     createHomePage.createHomeStatic();
     navAddListeners();
+    createAPizza.appendPizzaToJSON(data, createAPizza.createNewPizza(data, "dfhsjhfs", ["dshfshdf", "dhsfhfd"], "dhf", "sdfjhsd"));
     renderPizzaPicks();
 })();
